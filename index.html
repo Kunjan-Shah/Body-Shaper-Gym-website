@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+	<head>
+		<title>Gym Site</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="bmi.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<section class="header">
+				<div class="logo">Body Shaper</div>
+				<ul>
+		  			<li><a href="#home">Home</a></li>
+					<li><a href="#about">About us</a></li>
+					<li><a href="#bmi">BMI</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul> 	
+			</section>
+			<section class="home" id="home">
+				<div id="demo" class="carousel slide" data-ride="carousel">
+
+				  <!-- Indicators -->
+				  <ul class="carousel-indicators">
+				    <li data-target="#demo" data-slide-to="0" class="active"></li>
+				    <li data-target="#demo" data-slide-to="1"></li>
+				    <li data-target="#demo" data-slide-to="2"></li>
+				  </ul>
+				  
+				  <!-- The slideshow -->
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="./assets/img/carousel_img1.jpg" alt="Image 1">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="./assets/img/carousel_img2.jpg" alt="Image 2">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="./assets/img/carousel_img3.jpg" alt="Image 3">
+				    </div>
+				  </div>
+				  
+				  <!-- Left and right controls -->
+				  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+				    <span class="carousel-control-prev-icon"></span>
+				  </a>
+				  <a class="carousel-control-next" href="#demo" data-slide="next">
+				    <span class="carousel-control-next-icon"></span>
+				  </a>
+				</div>
+			</section>
+			<section class="about" id="about">
+				<div>
+					<h2>About Us</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br>
+					Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+					The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.<br><br><br><br><br><br><br></p>
+				</div>
+			</section>
+			<section class="bmi" id="bmi">
+				<h2 style="text-align: center">Body Mass Index Calculator<br><br></h2>
+		        <p>Enter your height: <input type="text" id="height"/>
+		            <select type="multiple" id="heightunits">
+		                <option value="centimetres" selected="selected">centimetres</option>
+		                <option value="inches">inches</option>
+		            </select>
+		        </p>
+		        <p>Enter your weight: <input type="text" id="weight"/>
+		            <select type="multiple" id="weightunits">
+		                <option value="kg" selected="selected">kilograms</option>
+		                <option value="lb">pounds</option>
+		            </select>
+		        </p>
+		        <input type="submit" value="compute BMI" onclick="computeBMI();">
+		        <h3><br><br>Your BMI is: <span id="output"></span></h3>
+		        <h4>This means you are: <span id="comment"></span> <br><br><br><br><br><br><br></h4> 
+			</section>
+			<section class="contact" id="contact">
+				<div>
+				   <h2>Contact Us</h2>
+				   <p style="text-align:center;margin-bottom:40px">Have any questions? We'd love to hear from you.</p>
+				   <div class="contact_1">
+				   		<div>
+				   			<h4>Isanpur branch</h4>
+<p>
+B-6,Shreedhar Complex,<br>
+Near Smruti Mandir<br>
+Phone: 079-25469091<br>
+       079-25469092<br>
+Time: 6am-9pm<br>
+      SUNDAY HOLIDAY
+<p>
+				   		</div>
+				   	</div>
+				   <div class="contact_2">
+				   		<div>
+				   			<h4>Naranpura branch</h4>
+<p>
+B-104,Abhinandan Complex,<br>
+Opp. St. Kabir School<br>
+Phone: 079-25468091<br>
+       079-25468092<br>
+Time: 6am-9pm<br>
+      SUNDAY HOLIDAY
+<p>
+				   		</div>
+				   	</div>
+				   <div class="contact_3">
+				   		<div>
+				   			<h4>Satellite branch</h4>
+<p>
+D-109,Dhananjay Complex,<br>
+Near Satellite Tower<br>
+Phone: 079-25467091<br>
+       079-25467092<br>
+Time: 6am-9pm<br>
+      SUNDAY HOLIDAY
+<p>
+				   		</div>
+				   	</div>
+				   	<div class="contact_4">
+				   		<div>
+				   			<p>Email id: body_shaper.gym@gmail.com</p>
+				   		</div>
+				   	</div>
+				   	<div class="socmed">
+					   	<div>	
+					   		<h3 style="font-size:18px;font-family:Arial;text-align:center">Connect with us on social media</h3>
+					   		<img src="assets/img/facebook.png" alt="img1">
+					   		<img src="assets/img/twitter.png" alt="img2">
+					   		<img src="assets/img/linkedin.png" alt="img3">
+					   	</div>
+				   	</div>
+			<section class="footer">
+				
+			</section>
+		</div>
+
+ 		<!-- <img src="logo.png" alt="LOGO" style="float:right;width:100px;height:100px;"> -->
+ 		
+	</body>
+</html>
