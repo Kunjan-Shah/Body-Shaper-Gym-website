@@ -1,6 +1,6 @@
 # Body-Shaper-Gym-website
 An aesthetic template for a Gym website.\
-The site is hosted at: [https://kunjan-shah.github.io/](https://kunjan-shah.github.io/)
+The site is hosted at: [https://kunjan-shah.github.io/Body-Shaper-Gym-website/](https://kunjan-shah.github.io/Body-Shaper-Gym-website/)
 
 ## Technologies
 Project is created with:
